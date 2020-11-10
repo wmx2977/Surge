@@ -4,8 +4,8 @@
 #!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_Demand.Module
 #!Raw:https://raw.githubusercontent.com/wmx2977/Surge/main/Cookie_Demand.Module
 [Script]
-# > 百度贴吧(tieba.baidu.com)
-百度贴吧 = type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
+# > 百度贴吧(客户端)(tieba.baidu.com)
+百度贴吧(客户端) = type=http-request,pattern=^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 # > 微博(pi.weibo.cn)
 微博 = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # > 微博钱包(pay.sc.weibo.com)
@@ -19,6 +19,17 @@
 # > 奈雪的茶(webapi.qmai.cn)
 奈雪的茶 = type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 # >顺丰速运（mcs-mimp-web.sf-express.com）
-http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, tag=顺丰速运
+顺丰速运 = type=http-request,pattern=^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
+# >什么值得买（*.smzdm.com）
+什么值得买 = type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js
+# >哈啰出行(gameapi.hellobike.com)
+哈啰出行 =type=http-request,pattern=^https:\/\/gameapi\.hellobike\.com\/api,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js
+# >爱奇艺(ifac*.iqiyi.com)
+爱奇艺 = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+# 携程旅行(m.ctrip.com)
+携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js
+携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js
+# 电信营业厅(wapside.189.cn:9001)
+电信营业厅= script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
 [MITM]
-hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com
+hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, ifac*.iqiyi.com, m.ctrip.com, wapside.189.cn:9001,
