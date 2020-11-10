@@ -69,16 +69,9 @@ http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vide
 http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
 http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js, requires-body=true, timeout=10,
 
-# 京东比价 (api.m.jd.com)
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
-
-# 淘宝比价 (trade-acs.m.taobao.com)
-http-request ^http://.+/amdc/mobileDispatch script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, requires-body=true, timeout=10
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, requires-body=true, timeout=10
-
 # Bahamut （api.gamer.com.tw）
 http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,tag=Bahamut
 http-response https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,tag=Bahamut
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.gamer.com.tw, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, api.m.jd.com, api.gamer.com.tw, p.du.163.com, mapi.weibo.com, *.uve.weibo.com, lcs-mobile-cops.adobe.io, account.wps.*, photos.adobe.io, www.xmind.cn, api.meiease.c*, vsco.co, mubu.com, commerce-.*api.faceu.mobi, api.shimo.im, api.meiyan.com, api.m.jd.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
+hostname = %APPEND% mp.weixin.qq.com, api.gamer.com.tw, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, ios.prod.ftl.netflix.com, api.gamer.com.tw, p.du.163.com, mapi.weibo.com, *.uve.weibo.com, lcs-mobile-cops.adobe.io, account.wps.*, photos.adobe.io, www.xmind.cn, api.meiease.c*, vsco.co, mubu.com, commerce-.*api.faceu.mobi, api.shimo.im, api.meiyan.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
