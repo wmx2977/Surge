@@ -2,7 +2,7 @@
 #!desc=Sign-in type task request.
 //name = type=cron, cronexp="cronexample", wake-system=1, timeout=180, script-path=javescript
 //GitHub:https://github.com/wmx2977/Surge/blob/main/Task.Module
-//raw:
+//raw:https://raw.githubusercontent.com/wmx2977/Surge/main/Task.Module
 [Script]
 # > 统一在每日 00:05 ---- 00:07 之间执行签到类任务
 # > 百度贴吧
