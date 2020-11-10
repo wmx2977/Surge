@@ -52,18 +52,6 @@ http-response https://api.shimo.im/users/ requires-body=1,max-size=0,script-path
 # > 美颜相机一次性解锁内购（api.meiyan.com）
 http-response ^https:\/\/api\.meiyan\.com\/iap\/verify\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/myxj.js,tag=美颜相机
 
-# 哔哩哔哩 精简&去广告 （api.bilibili.com, app.bilibili.com, api.live.bilibili.com）
-# 首页Tab
-http-response https://app.bilibili.com/x/resource/show/tab\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js,tag=哔哩哔哩首页Tab
-http-response https://app.bilibili.com/x/v2/feed/index\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js,tag=哔哩哔哩首页Tab
-# 个人中心
-http-response https://app.bilibili.com/x/v2/account/mine\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js,tag=哔哩哔哩个人中心(精简)
-http-response https://app.bilibili.com/x/v2/view\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js,tag=哔哩哔哩个人中心(精简)
-http-response https://api.bilibili.com/x/v2/reply/main\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,tag=哔哩哔哩个人中心(精简)
-http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,tag=哔哩哔哩直播
-# Bilibili Auto
-Bili Region = type=http-response,pattern=https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season\?access_key,requires-body=1,max-size=0,control-api=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
 # > 奈飞评分(ios.prod.ftl.netflix.com)
 http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
 http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
@@ -74,4 +62,4 @@ http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php sc
 http-response https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,tag=Bahamut
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.gamer.com.tw, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, ios.prod.ftl.netflix.com, api.gamer.com.tw, p.du.163.com, mapi.weibo.com, *.uve.weibo.com, lcs-mobile-cops.adobe.io, account.wps.*, photos.adobe.io, www.xmind.cn, api.meiease.c*, vsco.co, mubu.com, commerce-.*api.faceu.mobi, api.shimo.im, api.meiyan.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
+hostname = %APPEND% mp.weixin.qq.com, api.gamer.com.tw, ios.prod.ftl.netflix.com, api.gamer.com.tw, p.du.163.com, mapi.weibo.com, *.uve.weibo.com, lcs-mobile-cops.adobe.io, account.wps.*, photos.adobe.io, www.xmind.cn, api.meiease.c*, vsco.co, mubu.com, commerce-.*api.faceu.mobi, api.shimo.im, api.meiyan.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
