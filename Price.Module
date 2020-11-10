@@ -2,7 +2,7 @@
 #!desc=The historical prices of Jingdong and Taobao are combined with their respective hostname.
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
-//GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule
+//GitHub:https://github.com/wmx2977/Surge/blob/main/Price.Module
 //Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Price.sgmodule
 [Script]
 # > 淘宝比价
