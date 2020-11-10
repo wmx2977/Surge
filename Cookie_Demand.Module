@@ -5,7 +5,7 @@
 #!Raw:https://raw.githubusercontent.com/wmx2977/Surge/main/Cookie_Demand.Module
 [Script]
 # > 百度贴吧(客户端)(c.tieba.baidu.com)
-百度贴吧(客户端) = type=http-request,pattern=^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+百度贴吧(客户端)http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 # > 微博(pi.weibo.cn)
 微博 = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # > 微博钱包(pay.sc.weibo.com)
