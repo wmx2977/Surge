@@ -1,7 +1,7 @@
 #!name=Get Cookie in Need
 #!desc=Start to get cookies in need, combined with their hostnames.
 #!tag = type=http-request,pattern=https,script-path=javescript
-#!GitHub:https://github.com/wmx2977/Surge/edit/main/Cookie_Demand.Module
+#!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_Demand.Module
 #!Raw:https://raw.githubusercontent.com/wmx2977/Surge/main/JD.Module
 [Script]
 # > 百度贴吧(tieba.baidu.com)
