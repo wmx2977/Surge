@@ -24,12 +24,10 @@
 什么值得买 = type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js
 # >哈啰出行(gameapi.hellobike.com)
 哈啰出行 =type=http-request,pattern=^https:\/\/gameapi\.hellobike\.com\/api,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js
-# >爱奇艺(ifac*.iqiyi.com)
-爱奇艺 = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 # 携程旅行(m.ctrip.com)
 携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js
 携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js
 # 电信营业厅(wapside.189.cn:9001)
 电信营业厅= script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
 [MITM]
-hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, ifac*.iqiyi.com, m.ctrip.com, wapside.189.cn:9001,
+hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, m.ctrip.com, wapside.189.cn:9001,
