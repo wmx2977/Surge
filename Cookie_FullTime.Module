@@ -1,0 +1,14 @@
+#!name=Get Cookie All Time
+#!desc=Start to get cookies all time, combined with their hostname.
+#!tag = type=http-request, pattern=regex, script-path=javescript
+#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_FullTime.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_FullTime.sgmodule
+[Script]
+# > 掌上飞车(mwegame.qq.com)
+掌上飞车 = type=http-request, pattern=^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
+# > 网易云音乐(music.163.com)
+网易云音乐 = type=http-request, pattern=^https:\/\/music.163.com\/weapi\/user\/level, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js
+# > 小米运动(account.huami.com)
+小米运动 = type=http-response, pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
+[MITM]
+hostname = %APPEND% mwegame.qq.com, music.163.com, account.huami.com
