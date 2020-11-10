@@ -1,7 +1,7 @@
 #!name=Get Cookie All Time
 #!desc=Start to get cookies all time, combined with their hostname.
 #!tag = type=http-request, pattern=regex, script-path=javescript
-#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_FullTime.sgmodule
+#!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_FullTime.Module
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_FullTime.sgmodule
 [Script]
 # > 掌上飞车(mwegame.qq.com)
