@@ -28,6 +28,8 @@
 携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js
 携程旅行 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js
 # >电信营业厅(wapside.189.cn:9001)
-电信营业厅= script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
+电信营业厅 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
+# > 天天挖矿(operation-api.jimistore.com)
+天天挖矿 = http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
 [MITM]
-hostname = %APPEND% c.tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, m.ctrip.com, wapside.189.cn:9001,
+hostname = %APPEND% c.tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, m.ctrip.com, wapside.189.cn:9001, operation-api.jimistore.com
