@@ -79,10 +79,6 @@
 
 
 # > 临时活动
-# >>> 手机狂欢城 (2020.11.12结束)
-手机狂欢城 = type=cron,cronexp="30 10 */6 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_818.js
-# >>> 星推官 (2020.11.12结束)
-星推官 = type=cron, cronexp="0 0 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_xtg.js
 # >>> 排行榜 (2020.12.31结束)
 排行榜 = type=cron,cronexp="13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
 
