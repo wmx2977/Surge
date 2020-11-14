@@ -32,6 +32,6 @@
 # >电信营业厅
 电信营业厅= type=cron,cronexp="10 17 0 * * *",wake-system=1,timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js
 # >机场签到
-机场签到 cron "45 18 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js
+机场签到= type=cron,cronexp="45 18 0 * * *" ,wake-system=1,timeout=180, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js
 # >天天挖矿
-天天挖矿 cron "0 19 * * *" script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
+天天挖矿= type=cron,cronexp="0 19 0 * * *" ,wake-system=1,timeout=180, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
