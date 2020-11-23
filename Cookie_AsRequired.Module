@@ -30,6 +30,8 @@
 电信营业厅 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
 # > 天天挖矿(operation-api.jimistore.com)
 天天挖矿 = type=http-request,pattern=^https:\/\/operation-api\.jimistore\.com\/*,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
+# > 机场签到cookie版(affcm.com)
+获取Cookie = type=http-request, pattern=https:\/\/affcm.com, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
  
 [MITM]
-hostname = %APPEND% c.tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, m.ctrip.com, wapside.189.cn:9001, operation-api.jimistore.com, 
+hostname = %APPEND% c.tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com,gameapi.hellobike.com, m.ctrip.com, wapside.189.cn:9001, operation-api.jimistore.com, affcm.com, 
