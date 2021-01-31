@@ -1,5 +1,5 @@
-#!name=Get Cookie in Need
-#!desc=Start to get cookies in need, combined with their hostnames.
+#!name=Cookie合集
+#!desc=按需开启，获取Cookie脚本合集
 #!tag = type=http-request,pattern=https,script-path=javescript
 #!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_Demand.Module
 #!Raw:https://raw.githubusercontent.com/wmx2977/Surge/main/Cookie_Demand.Module
