@@ -1,4 +1,4 @@
-#!name=Cookie合集
+#!name=Cookie合集（按需）
 #!desc=按需开启，获取Cookie脚本合集
 #!tag = type=http-request,pattern=https,script-path=javescript
 #!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_Demand.Module
