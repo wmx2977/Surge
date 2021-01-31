@@ -1,5 +1,5 @@
-#!name=Historical Price
-#!desc=The historical prices of Jingdong and Taobao are combined with their respective hostname.
+#!name=历史价格
+#!desc=淘宝、京东历史价格
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //GitHub:https://github.com/wmx2977/Surge/blob/main/Price.Module
