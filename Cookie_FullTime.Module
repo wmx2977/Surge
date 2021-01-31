@@ -1,5 +1,5 @@
-#!name=Get Cookie All Time
-#!desc=Start to get cookies all time, combined with their hostname.
+#!name=Cookie合集（常启）
+#!desc=日常开启，获取Cookie脚本合集
 #!tag = type=http-request, pattern=regex, script-path=javescript
 #!GitHub:https://github.com/wmx2977/Surge/blob/main/Cookie_FullTime.Module
 #!Raw:https://raw.githubusercontent.com/wmx2977/Surge/main/Cookie_FullTime.Module
